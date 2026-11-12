@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escrow Pigeon — Secure Escrow for Digital Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Skip Link for Accessibility -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="Escrow Pigeon Home">
+        <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M10 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 10v6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">Escrow Pigeon</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#login" class="btn btn-ghost">Sign In</a>
+        <a href="#signup" class="btn btn-primary">Get Started</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile menu" hidden>
+      <nav class="mobile-nav">
+        <a href="#features" class="mobile-nav-link">Features</a>
+        <a href="#how-it-works" class="mobile-nav-link">How It Works</a>
+        <a href="#pricing" class="mobile-nav-link">Pricing</a>
+        <a href="#faq" class="mobile-nav-link">FAQ</a>
+        <hr class="mobile-nav-divider">
+        <a href="#login" class="mobile-nav-link mobile-nav-link--secondary">Sign In</a>
+        <a href="#signup" class="mobile-nav-link mobile-nav-link--primary">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" role="main">
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-badge" aria-label="New">Now in Private Beta</span>
+          <h1 id="hero-title" class="hero-title">
+            Secure Payments for <span class="highlight">Digital Services</span>
+          </h1>
+          <p class="hero-subtitle">
+            Escrow Pigeon holds funds until work is delivered and accepted. No crypto, no complexity — just trusted payments for freelancers, agencies, and clients.
+          </p>
+          <div class="hero-actions">
+            <a href="#signup" class="btn btn-primary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14M5 12h14"/>
+              </svg>
+              Join the Waitlist
+            </a>
+            <a href="#demo" class="btn btn-secondary btn-lg">Watch Demo</a>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+              <span>PCI SAQ A Compliant</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+              <span>Bank-Grade Security</span>
+            </div>
+            <div class="trust-item">
+              <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+              <span>Identity Verified</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Illustration -->
+        <div class="hero-illustration" aria-hidden="true">
+          <div class="illustration-card card-buyer">
+            <div class="card-header">
+              <span class="card-avatar" aria-hidden="true">👤</span>
+              <div>
+                <strong>Sarah Chen</strong>
+                <span>Buyer · Tech Startup</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="deal-status status-funded">Funds Secured</div>
+              <p class="deal-desc">React Dashboard — $3,200</p>
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" aria-label="Deal progress">
+                <div class="progress-fill" style="width: 60%"></div>
+              </div>
+              <div class="progress-labels">
+                <span>Paid</span>
+                <span>In Progress</span>
+                <span>Review</span>
+                <span>Complete</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="illustration-card card-seller">
+            <div class="card-header">
+              <span class="card-avatar" aria-hidden="true">👨‍💻</span>
+              <div>
+                <strong>Marcus Webb</strong>
+                <span>Seller · Full-Stack Dev</span>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="deal-status status-delivered">Delivered</div>
+              <p class="deal-desc">API Integration — $1,800</p>
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" aria-label="Deal progress">
+                <div class="progress-fill" style="width: 100%"></div>
+              </div>
+              <div class="progress-labels">
+                <span>Paid</span>
+                <span>In Progress</span>
+                <span>Review</span>
+                <span class="current">Complete</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="illustration-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M14 5l5 7-5 7"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="features-title" class="section-title">Built for Trust</h2>
+          <p class="section-subtitle">Every feature designed to protect both parties in every transaction</p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Managed Escrow</h3>
+            <p class="feature-desc">Funds held securely via Stripe Connect. Released only when both parties confirm delivery and acceptance — or through structured dispute resolution.</p>
+            <ul class="feature-benefits">
+              <li>Manual capture (up to 90 days)</li>
+              <li>Platform-controlled release</li>
+              <li>Automatic refund on timeout</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Progressive Verification</h3>
+            <p class="feature-desc">Three-tier identity system builds trust incrementally. From email-only to government ID + selfie to full business KYB.</p>
+            <ul class="feature-benefits">
+              <li>Basic: Email verified</li>
+              <li>Verified: ID + selfie (Stripe Identity)</li>
+              <li>Business: Docs + KYB</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <line x1="10" y1="9" x2="8" y2="9"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Structured Disputes</h3>
+            <p class="feature-desc">Evidence-based resolution with platform reviewers. Auto-compiled chargeback representment using deal room artifacts.</p>
+            <ul class="feature-benefits">
+              <li>Evidence submission portal</li>
+              <li>5-day SLA for decisions</li>
+              <li>Auto-representment to Stripe</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M12 6v6l4 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Multi-Currency</h3>
+            <p class="feature-desc">Deal in USD, EUR, or GBP. Sellers choose settlement currency. Transparent FX with 1% buffer.</p>
+            <ul class="feature-benefits">
+              <li>USD, EUR, GBP at launch</li>
+              <li>Seller picks payout currency</li>
+              <li>Real-time Stripe FX rates</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <path d="M8 21h8"/>
+                <path d="M12 17v4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Legal Agreements</h3>
+            <p class="feature-desc">Auto-generated agreements with dual e-signatures, SHA-256 content hashing, and PDF audit trail.</p>
+            <ul class="feature-benefits">
+              <li>Template-based generation</li>
+              <li>Dual acceptance required</li>
+              <li>Immutable audit log</li>
+            </ul>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                <line x1="12" y1="22.08" x2="12" y2="12"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Marketplace Ready</h3>
+            <p class="feature-desc">Service listings with search, categories, reviews, and seller analytics — all integrated with escrow.</p>
+            <ul class="feature-benefits">
+              <li>Full-text search</li>
+              <li>Reviews & ratings</li>
+              <li>Seller dashboard</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works" aria-labelledby="hiw-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="hiw-title" class="section-title">How It Works</h2>
+          <p class="section-subtitle">Four simple steps from agreement to payout</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step-number" aria-hidden="true">01</div>
+            <div class="step-content">
+              <h3 class="step-title">Create Deal</h3>
+              <p class="step-desc">Buyer defines scope, milestones, and timeline. Auto-generates agreement with terms.</p>
+              <div class="step-visual">
+                <div class="mini-card">
+                  <span class="mini-label">Deal Form</span>
+                  <div class="mini-fields">
+                    <div class="mini-field"></div>
+                    <div class="mini-field"></div>
+                    <div class="mini-field short"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-number" aria-hidden="true">02</div>
+            <div class="step-content">
+              <h3 class="step-title">Invite & Pay</h3>
+              <p class="step-desc">Seller accepts invite, completes Stripe Connect onboarding. Buyer pays — funds held in escrow.</p>
+              <div class="step-visual">
+                <div class="mini-card mini-card--payment">
+                  <span class="mini-label">Payment</span>
+                  <div class="mini-amount">$3,200.00</div>
+                  <div class="mini-field"></div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-number" aria-hidden="true">03</div>
+            <div class="step-content">
+              <h3 class="step-title">Deliver Work</h3>
+              <p class="step-desc">Seller submits deliverables with evidence (files, links, screenshots). Buyer reviews.</p>
+              <div class="step-visual">
+                <div class="mini-card">
+                  <span class="mini-label">Delivery</span>
+                  <div class="mini-files">
+                    <div class="mini-file"></div>
+                    <div class="mini-file"></div>
+                    <div class="mini-file"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-number" aria-hidden="true">04</div>
+            <div class="step-content">
+              <h3 class="step-title">Accept & Release</h3>
+              <p class="step-desc">Buyer accepts → funds released to seller. Auto-refund if no action within deadline.</p>
+              <div class="step-visual">
+                <div class="mini-card mini-card--success">
+                  <span class="mini-label">Complete</span>
+                  <svg class="success-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="pricing-title" class="section-title">Simple, Transparent Pricing</h2>
+          <p class="section-subtitle">No hidden fees. Platform fee collected at release. Stripe fees apply separately.</p>
+        </header>
+
+        <div class="pricing-toggle" role="group" aria-label="Billing period">
+          <button class="toggle-btn active" data-period="per-deal" aria-pressed="true">Per Deal</button>
+          <button class="toggle-btn" data-period="monthly" aria-pressed="false">Monthly Volume</button>
+        </div>
+
+        <div class="pricing-cards" role="list">
+          <article class="pricing-card" role="listitem">
+            <header class="pricing-header">
+              <h3 class="pricing-name">Standard</h3>
+              <p class="pricing-desc">For occasional deals</p>
+            </header>
+            <div class="pricing-price">
+              <span class="price-amount">4%</span>
+              <span class="price-detail">+ $0.30 per deal</span>
+            </div>
+            <ul class="pricing-features">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Full escrow protection</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dispute resolution</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Agreement templates</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Email support</li>
+            </ul>
+            <a href="#signup" class="btn btn-outline btn-block">Start Free</a>
+          </article>
+
+          <article class="pricing-card pricing-card--popular" role="listitem">
+            <span class="popular-badge">Most Popular</span>
+            <header class="pricing-header">
+              <h3 class="pricing-name">Pro</h3>
+              <p class="pricing-desc">For regular freelancers & agencies</p>
+            </header>
+            <div class="pricing-price">
+              <span class="price-amount">3.5%</span>
+              <span class="price-detail">+ $0.30 per deal</span>
+            </div>
+            <ul class="pricing-features">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Standard</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Priority dispute review</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Custom agreements</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> API access (beta)</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Dedicated support</li>
+            </ul>
+            <a href="#signup" class="btn btn-primary btn-block">Get Started</a>
+          </article>
+
+          <article class="pricing-card" role="listitem">
+            <header class="pricing-header">
+              <h3 class="pricing-name">Enterprise</h3>
+              <p class="pricing-desc">For high-volume platforms</p>
+            </header>
+            <div class="pricing-price">
+              <span class="price-amount">Custom</span>
+              <span class="price-detail">Volume pricing</span>
+            </div>
+            <ul class="pricing-features">
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Everything in Pro</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> White-label option</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> SLA guarantees</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> SSO & SCIM</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Custom integrations</li>
+              <li><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Account manager</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Contact Sales</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-content">
+          <h2 id="cta-title" class="cta-title">Ready for Safer Payments?</h2>
+          <p class="cta-desc">Join 500+ freelancers and agencies in the private beta. No credit card required to start.</p>
+          <div class="cta-actions">
+            <a href="#signup" class="btn btn-primary btn-lg">Join Waitlist</a>
+            <a href="#demo" class="btn btn-ghost btn-lg">Book a Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="logo" aria-label="Escrow Pigeon Home">
+              <svg class="logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M16 10v6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="logo-text">Escrow Pigeon</span>
+            </a>
+            <p class="footer-tagline">Trusted payments for digital services.</p>
+            <div class="social-links" role="list" aria-label="Social links">
+              <a href="#" class="social-link" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+              <a href="#" class="social-link" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg></a>
+              <a href="#" class="social-link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+              <a href="#" class="social-link" aria-label="Discord"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.675 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.007-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.1.244.205.373.292a.077.077 0 0 1-.006.127 13.274 13.274 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.645.744 1.252 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.412-4.486-.411-9.012-3.555-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.419-2.157 2.419zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.419-2.157 2.419z"/></svg></a>
+            </div>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <div class="footer-nav-col">
+              <h4 class="footer-nav-title">Product</h4>
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#">API Docs</a></li>
+                <li><a href="#">Status</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <h4 class="footer-nav-title">Resources</h4>
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Security</a></li>
+                <li><a href="#">Compliance</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <h4 class="footer-nav-title">Company</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <h4 class="footer-nav-title">Legal</h4>
+              <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Escrow Agreement</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">&copy; 2026 Escrow Pigeon. All rights reserved.</p>
+          <p class="compliance-badge">PCI SAQ A · GDPR · CCPA Compliant</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
